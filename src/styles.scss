@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+$zodicType : ((aquarius, 'aquarius-1'), (aries, 'aries-1'), (cancer, 'cancer-1'), (capricornus, 'capricornus-1'), (gemini , 'gemini-1'), (gemini, 'gemini-1'), (leo, 'leo-1'), (libra, 'libra-1'), (pisces, 'pisces-1'), (sagittarius, 'sagittarius-1'), (scorpio, 'scorpio-1'), (taurus, 'taurus-1'), (virgo, 'virgo-1'));
+
+@each $iconName, $icon in $zodicType {
+    .zodicTypeOne-#{$iconName} {
+        background-image: url(assets/images//#{$icon}.svg);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 90px;
+        width: 100%;
+        float: left;
+    }
+}
